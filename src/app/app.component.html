@@ -1,0 +1,14 @@
+<h1>
+  Angular 5 is running!
+  {{title}}
+</h1>
+
+
+<app-child *ngFor="let i of [0,1,2,3]" (send)="addItem(i,$event)" [title]="childtitles[i]" [items]="items[i]"></app-child>
+
+
+
+
+
+
+
